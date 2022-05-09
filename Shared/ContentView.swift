@@ -9,26 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        circulerDesing
-    }
-}
-    var circulerDesing: some View{
-        VStack(spacing:20){
-            textDesing
-            ProgressRing()
-        
-            
+//        ZStack{
+//            Color.black
+//            circulerDesing
+//
+//        }
+        TabView{
+            HomeView().tabItem{
+                Image(systemName: "house")
+                Text("Home")
+            }
+            Text("Setting Screen").tabItem{
+                Image(systemName: "gear")
+                Text("Settings")
+            }
         }
         
-
-}
-var textDesing:some View{
-    VStack{
-        Text("Text Desigm").fontWeight(.bold).foregroundColor(.brown)
+        
     }
 }
 
+struct HomeView : View{
+    var body: some View{
+        NavigationView{
+            ZStack{
+                
+                Color.red
+            }.navigationTitle("Home")
+            
+        }
+    }
+}
 
 
 struct ContentView_Previews: PreviewProvider {

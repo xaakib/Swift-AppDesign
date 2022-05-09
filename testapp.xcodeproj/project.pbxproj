@@ -12,7 +12,6 @@
 		909D3A332828E4F9002D75EB /* testappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0B2828E4F7002D75EB /* testappApp.swift */; };
 		909D3A342828E4F9002D75EB /* testappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0B2828E4F7002D75EB /* testappApp.swift */; };
 		909D3A352828E4F9002D75EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0C2828E4F7002D75EB /* ContentView.swift */; };
-		909D3A362828E4F9002D75EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0C2828E4F7002D75EB /* ContentView.swift */; };
 		909D3A372828E4F9002D75EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909D3A0D2828E4F9002D75EB /* Assets.xcassets */; };
 		909D3A382828E4F9002D75EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909D3A0D2828E4F9002D75EB /* Assets.xcassets */; };
 		90A012D72829082B00F4E5DC /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A012D62829082B00F4E5DC /* ProgressRing.swift */; };
@@ -289,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909D3A362828E4F9002D75EB /* ContentView.swift in Sources */,
 				909D3A342828E4F9002D75EB /* testappApp.swift in Sources */,
 				90A012D82829082B00F4E5DC /* ProgressRing.swift in Sources */,
 			);
