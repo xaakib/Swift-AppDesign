@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		909D3A242828E4F9002D75EB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A232828E4F9002D75EB /* Tests_iOS.swift */; };
 		909D3A262828E4F9002D75EB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A252828E4F9002D75EB /* Tests_iOSLaunchTests.swift */; };
-		909D3A302828E4F9002D75EB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A2F2828E4F9002D75EB /* Tests_macOS.swift */; };
-		909D3A322828E4F9002D75EB /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A312828E4F9002D75EB /* Tests_macOSLaunchTests.swift */; };
 		909D3A332828E4F9002D75EB /* testappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0B2828E4F7002D75EB /* testappApp.swift */; };
 		909D3A342828E4F9002D75EB /* testappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0B2828E4F7002D75EB /* testappApp.swift */; };
 		909D3A352828E4F9002D75EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0C2828E4F7002D75EB /* ContentView.swift */; };
 		909D3A362828E4F9002D75EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909D3A0C2828E4F7002D75EB /* ContentView.swift */; };
 		909D3A372828E4F9002D75EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909D3A0D2828E4F9002D75EB /* Assets.xcassets */; };
 		909D3A382828E4F9002D75EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 909D3A0D2828E4F9002D75EB /* Assets.xcassets */; };
+		90A012D72829082B00F4E5DC /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A012D62829082B00F4E5DC /* ProgressRing.swift */; };
+		90A012D82829082B00F4E5DC /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A012D62829082B00F4E5DC /* ProgressRing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,13 +42,11 @@
 		909D3A0D2828E4F9002D75EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		909D3A122828E4F9002D75EB /* testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909D3A182828E4F9002D75EB /* testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		909D3A1A2828E4F9002D75EB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		909D3A1F2828E4F9002D75EB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		909D3A232828E4F9002D75EB /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		909D3A252828E4F9002D75EB /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		909D3A2B2828E4F9002D75EB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		909D3A2F2828E4F9002D75EB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		909D3A312828E4F9002D75EB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		90A012D62829082B00F4E5DC /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				909D3A0A2828E4F7002D75EB /* Shared */,
-				909D3A192828E4F9002D75EB /* macOS */,
 				909D3A222828E4F9002D75EB /* Tests iOS */,
-				909D3A2E2828E4F9002D75EB /* Tests macOS */,
 				909D3A132828E4F9002D75EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				909D3A0B2828E4F7002D75EB /* testappApp.swift */,
+				90A012D62829082B00F4E5DC /* ProgressRing.swift */,
 				909D3A0C2828E4F7002D75EB /* ContentView.swift */,
 				909D3A0D2828E4F9002D75EB /* Assets.xcassets */,
 			);
@@ -115,14 +112,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		909D3A192828E4F9002D75EB /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				909D3A1A2828E4F9002D75EB /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		909D3A222828E4F9002D75EB /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,15 +119,6 @@
 				909D3A252828E4F9002D75EB /* Tests_iOSLaunchTests.swift */,
 			);
 			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		909D3A2E2828E4F9002D75EB /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				909D3A2F2828E4F9002D75EB /* Tests_macOS.swift */,
-				909D3A312828E4F9002D75EB /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +281,7 @@
 			files = (
 				909D3A352828E4F9002D75EB /* ContentView.swift in Sources */,
 				909D3A332828E4F9002D75EB /* testappApp.swift in Sources */,
+				90A012D72829082B00F4E5DC /* ProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +291,7 @@
 			files = (
 				909D3A362828E4F9002D75EB /* ContentView.swift in Sources */,
 				909D3A342828E4F9002D75EB /* testappApp.swift in Sources */,
+				90A012D82829082B00F4E5DC /* ProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				909D3A322828E4F9002D75EB /* Tests_macOSLaunchTests.swift in Sources */,
-				909D3A302828E4F9002D75EB /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
