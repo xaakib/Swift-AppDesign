@@ -9,17 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        ZStack{
-//            Color.black
-//            circulerDesing
-//
-//        }
         TabView{
+            
             HomeView().tabItem{
                 Image(systemName: "house")
                 Text("Home")
             }
-            Text("Setting Screen").tabItem{
+            SettingView().tabItem{
                 Image(systemName: "gear")
                 Text("Settings")
             }
@@ -32,6 +28,7 @@ struct ContentView: View {
 struct HomeView : View{
     var body: some View{
         NavigationView{
+            
             ZStack{
                 
                 Color.red
@@ -40,6 +37,7 @@ struct HomeView : View{
         }
     }
 }
+
 
 
 struct ContentView_Previews: PreviewProvider {
